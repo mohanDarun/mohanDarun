@@ -67,3 +67,25 @@ Then('I should see the "Health checks" section', async () => {
   const healthChecksText = await DeveloperPage.getHealthChecksText();
   console.log("Text content of the 'Health checks' section:", healthChecksText);
 });
+
+// Step: When I click on the "Get a token" button
+When('I click on the "Get a token" button', async () => {
+  // Add a pause of 2 seconds (2000 milliseconds)
+  await browser.pause(2000);
+  // Implement code to click the "Get a token" button
+  await DeveloperPage.clickGetToken();
+});
+
+// Step: Then I should see the "Request an access token" section
+Then('I should see the "Request an access token" section', async () => {
+  // Add a pause of 2 seconds (2000 milliseconds) to see the redirection
+  await browser.pause(2000);
+  // Implement code to assert the presence of the "Request an access token" section
+  const accessTokenSection = DeveloperPage.accessTokenSection;
+  await expect(accessTokenSection).toBePresent();
+  await expect(accessTokenSection).toBeDisplayed();
+
+  // Print the text content of the "Request an access token" section
+  const accessTokenText = await DeveloperPage.getAccessTokenText();
+  console.log("Text content of the 'Request an access token' section:", accessTokenText);
+});
