@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    color: #BA0000;
+    border-bottom: 2px solid #BA0000;
+}
+
+.sign-in {
+    background-color: #BA0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('../images/background-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-get-started {
+    background-color: #BA0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.question {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.question:after {
+    content: '\25BC';
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.question.active:after {
+    content: '\25B2';
+    transform: rotate(180deg);
+}
+
+.more-help {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.more-help h2 {
+    font-size: 2rem;
+    color: #BA0000;
+    margin-bottom: 10px;
+}
+
+.more-help p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-contact-us {
+    background-color: #BA0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
