@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBank Help Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="KeyBank Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="sign-in">Sign In</a>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>KeyBank Help Center</h1>
+            <p>Welcome to the KeyBank Help Center. How can we assist you today?</p>
+            <a href="#" class="btn-get-started">Get Started</a>
+        </div>
+        <section class="faq">
+            <h1>Frequently asked questions</h1>
+            <p>Find answers to common questions about our banking services.</p>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">How do I open a new account?</div>
+                <div class="answer">
+                    To open a new account, visit our nearest branch or apply online through our website. You'll need to provide a valid ID and proof of address.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">What are the fees for international transfers?</div>
+                <div class="answer">Details about the fees for international transfers will be here.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">How can I reset my online banking password?</div>
+                <div class="answer">Instructions for resetting the online banking password will be here.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">What should I do if my card is lost or stolen?</div>
+                <div class="answer">Guidance on what to do if your card is lost or stolen will be here.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">How do I apply for a loan?</div>
+                <div class="answer">Information on how to apply for a loan will be here.</div>
+            </div>
+        </section>
+        <section class="more-help">
+            <h2>Need More Help?</h2>
+            <p>Our support team is here to assist you with any questions or issues you may have. Don't hesitate to reach out.</p>
+            <a href="#" class="btn-contact-us">Contact Us</a>
+        </section>
+    </main>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                element.classList.remove("active");
+            } else {
+                answer.style.display = "block";
+                element.classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>
